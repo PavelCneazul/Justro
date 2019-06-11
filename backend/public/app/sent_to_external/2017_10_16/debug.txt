@@ -1,0 +1,26 @@
+* Hostname in DNS cache was stale, zapped
+*   Trying ::1...
+* Connected to localhost (::1) port 80 (#0)
+> POST /baar_rework/public/api/external_file_upload HTTP/1.1
+Host: localhost
+Accept: */*
+Content-Length: 5411685
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------12f52749b86aafd9
+
+< HTTP/1.1 100 Continue
+< HTTP/1.1 500 Internal Server Error
+< Date: Mon, 16 Oct 2017 09:43:36 GMT
+< Server: Apache/2.4.25 (Unix) OpenSSL/1.0.2j PHP/7.0.15 mod_perl/2.0.8-dev Perl/v5.16.3
+< X-Powered-By: PHP/7.0.15
+< Cache-Control: no-cache, private
+< X-RateLimit-Limit: 60
+< X-RateLimit-Remaining: 59
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Headers: origin, x-requested-with, content-type, Auth-Token
+< Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS, PATCH, UPDATE
+< Connection: close
+< Transfer-Encoding: chunked
+< Content-Type: text/html; charset=UTF-8
+< 
+* Closing connection 0

@@ -1,0 +1,21 @@
+<?php
+
+use App\Helpers\ApiPortalInstante\APISearch;
+use App\Helpers\ApiPortalInstante\APISearchClaimsJob;
+use App\Models\Claim;
+use Illuminate\Http\Request;
+
+Route::group([
+
+    'middleware' => 'api',
+    'namespace' => 'App\Http\Controllers',
+    'prefix' => 'auth'
+
+], function ($router) {
+
+    Route::post('login', 'AuthController@login');
+    Route::post('logout', 'AuthController@logout');
+    Route::post('refresh', 'AuthController@refresh');
+    Route::post('me', 'AuthController@me');
+
+});
